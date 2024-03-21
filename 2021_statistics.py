@@ -855,7 +855,7 @@ final_form_df['final_form'] = scaler.fit_transform(final_form_df[['final_form']]
 # # Assuming final_form_df and df_fixtures_2019 are your DataFrames
 # # Replace these with your actual DataFrame loading if necessary
 
-# app = dash.Dash(__name__)
+# dash.Dash(__name__)
 
 # # Function to create traces for each team
 # def create_trace_for_team(team, df):
@@ -1124,7 +1124,7 @@ def update_output(selected_team):
 # # Assuming 'final_form_df' is your DataFrame with the 'team' and 'rank' columns
 
 # # Initialize the Dash app
-# app = dash.Dash(__name__)
+# dash.Dash(__name__)
 
 # # Define the layout of the app
 # app.layout = html.Div([
@@ -1644,6 +1644,7 @@ import dash_table
 # Replace these with your actual DataFrame loading if necessary
 
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div(
     [
